@@ -9,7 +9,7 @@ timeStamp = datetime.datetime.now().strftime("%m%d%Y")
 
 ##connect to AGOL
 print("Connecting using your ArcGIS Pro login credentials...")
-gis = GIS(profile = "trans_tel")
+gis = GIS(profile = "PROFILE_NAME")
 print(f"Logged in as: {gis.users.me.username}\n")
         
 ##read json data file
