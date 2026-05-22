@@ -6,7 +6,7 @@ from arcgis.gis import GIS
 import zipfile
 
 ##variables
-jsonPath = "C:/Users/MWright/Desktop/projectDictionary.json"
+jsonPath = "C:/YOUR/LOCAL/PATH/TO/DICTIONARY/projectDictionary.json"
 
 ##print Python environment path and version
 print(f"Path: {sys.executable}")
@@ -14,7 +14,7 @@ print(f"Version: {sys.version}")
 
 ##connect to AGOL
 print("Connecting using your ArcGIS Pro login credentials...")
-gis = GIS(profile = "trans_tel")
+gis = GIS(profile = "PROFILE_NAME")
 print(f"Logged in as: {gis.users.me.username}")
 
 print("\n")
