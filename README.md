@@ -8,11 +8,11 @@ Python scripts for automating data exports from ArcGIS Online (AGOL) to local st
 
 This repo contains two pipeline scripts that handle automated data movement from AGOL project layers:
 
-**Script 1 — Shapefile Downloader**
+**Script 1 — Shapefile Downloader   -- AUTOMATED ARCHIVE SYSTEM**
 Reads a JSON project dictionary and downloads shapefiles for each active project from AGOL, saving zipped exports to local project folders.
 
-**Script 2 — CSV Exporter (in refactor)**
-Reads the same JSON project dictionary and exports feature class data as CSVs from AGOL, saving them to their respective SharePoint project folders and feeding data into Smartsheet. A project name column is appended to each CSV to enable filtering in Smartsheet.
+**Script 2 — CSV Exporter (in refactor)  -- EXPORT FEATURE CLASS TABLE DATE TO SHAREDRIVE TO BE DATA SHUTTLED TO SMARTSHEET**
+Reads the same JSON project dictionary and exports feature class data as CSVs from AGOL, saving them to their respective SharePoint project folders; this data will ultimately be fed into Smartsheet via Data Shuttle. A project name column is appended to each CSV to enable filtering in Smartsheet.
 
 ---
 
@@ -89,12 +89,12 @@ projects.json
 
 - [x] Establish single-project proof of concept (original script)
 - [x] Commit original to version control
-- [ ] Rename `absolutePath` to `localPath` in JSON and Script 1
-- [ ] Add `sharedPath` key to JSON
-- [ ] Refactor Script 2 to read from JSON dictionary
-- [ ] Refactor Script 2 to iterate over all projects
-- [ ] Add `projectName` column to each exported CSV
-- [ ] End-to-end test across all active projects
+- [x] Rename `absolutePath` to `localPath` in JSON and Script 1
+- [x] Add `sharedPath` key to JSON
+- [x] Refactor Script 2 to read from JSON dictionary
+- [x] Refactor Script 2 to iterate over all projects
+- [x] Add `projectName` column to each exported CSV
+- [x] End-to-end test across all active projects
 
 ---
 
